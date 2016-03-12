@@ -1,0 +1,324 @@
+/* --------- GENERAL STYLES ---------- */
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #384047;
+}
+
+.quote {
+font-style: italic;
+}
+
+header {
+    background: #2D6B93;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+h2 {
+    font-size: 1.3em;
+}
+
+.wrapper {
+    max-width: 600px;
+    margin: auto;
+}
+
+
+/* ---------- MAIN CONTENT --------- */
+
+.intro {
+    text-align: center;
+    width: 93.75%;
+    margin: auto;
+}
+
+.intro p {
+    color: #2d3945;
+}
+
+.page-title {
+    text-transform: uppercase;
+    font-size: 1.2em;
+    color: white;
+}
+
+img {
+    max-width: 20%;
+}
+
+/* -- Horizontal Rules -- */
+
+.thick-hr {
+    width: 100%;
+    border-bottom: 4px solid #2d3945;
+    margin-bottom: 3px;
+}
+
+.thin-hr {
+    width: 100%;
+    border-bottom: 1px solid #2d3945;
+    margin-top: 0;
+}
+
+.narrow-hr {
+    width: 93.5%;
+}
+
+/* ----- Form ----- */
+
+form {
+  width: 100%;
+  margin: auto;
+  padding: 0;
+  color: #2d3945;
+
+}
+
+fieldset {
+    width: 93.75%;
+    margin: auto;
+    padding: 0 0 30px 0;
+    border: none;
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+input[type="password"],
+textarea,
+select {
+  background: #eff0f1;
+  font-size: 1em;
+  height: 50px;
+  padding: 15px;
+  width: 100%;
+  color: #8a97a0;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 1px 1px 1px rgba(45,57,69,.3);
+  transition: background 2.5s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+  background: white;
+  transition: background 0.5s;
+  outline: 0;
+}
+
+input[id="zipcode"] {
+    width: 150px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    display: inline-block;
+    float: left;
+    margin-left: auto;
+    margin-right: 10px;
+    margin-top: 5px;
+    text-align: left;
+
+}
+
+.check,
+.radio {
+    width: 100%;
+}
+
+
+input:focus,
+textarea:focus {
+   border: 1px solid #389CDD;
+   color: #389CDD;
+} 
+
+input:required {
+    background: #FF95A2;
+}
+
+input:valid {
+    background: #eff0f1;
+}
+
+ul {
+    padding: 0;
+    list-style-position: outside;
+}
+
+li {
+    list-style: none;
+    margin-left: 4px;
+    margin-bottom: .6em;
+}
+
+li:last-child {
+    margin-bottom: 30px;
+}
+
+legend {
+    font-size: 2.0em;
+    font-weight: 600;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+label {
+    display: block;
+  font-size: 1em;
+}
+
+.main-label {
+    margin-bottom: 10px;
+}
+
+textarea {
+    min-height: 100px;
+}
+
+/* -- Buttons -- */
+
+button {
+  color: white;
+  font-size: 1.5em;
+  text-align: center;
+  border-radius: 5px;
+  height: 60px;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-weight: 600;
+  border: none;
+  background-color: #2D6B93; 
+
+}
+
+button:hover {
+     background-color: #389CDD;
+}
+
+/* --Placeholder for forum-- */
+
+input::-webkit-input-placeholder {
+	color: rgba(100,100,100,.5);
+	text-align: right;
+    font-size: .8em;
+    font-style: italic;
+    padding-right: 10px;
+}
+
+input::-moz-placeholder {
+	color: rgba(100,100,100,.5);
+	text-align: right;
+    font-size: .8em;
+    font-style: italic;
+    padding-right: 10px;
+}
+
+input:-moz-placeholder {   
+	color: rgba(100,100,100,.5);
+	text-align: right;
+    font-size: .8em;
+    font-style: italic;
+    padding-right: 10px;
+}
+
+input:-ms-input-placeholder { 
+	color: rgba(100,100,100,.5);
+	text-align: right;
+    font-size: .8em;
+    font-style: italic;
+    padding-right: 10px;
+}
+
+
+/* ---------- FOOTER --------- */
+
+footer {
+    text-align: center;
+    font-style: italic;
+    padding-bottom: 210px;
+    font-size: .8em;
+    color: rgba(100,100,100,.5);
+}
+
+
+/* ---------- MEDIA QUERIES ---------- */
+
+@media (min-width: 760px) {
+
+    .wrapper {
+        max-width: 600px;
+        width: 100%;
+    }
+    
+    .intro,
+    .thick-hr,
+    .thin-hr {
+        margin-left: 0;
+        margin-right: 0;
+        width: 600px;
+    }
+    
+    .flexible-input {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    
+    .flexible-input label {
+        width: 150px;
+    }
+    
+      
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    input[type="tel"],
+    select {
+        width: 445px;
+        margin-bottom: 0;
+    }
+    
+    input[id="zipcode"] {
+        width: 150px;
+    }
+    
+    .flexible-input:last-child {
+        width: 300px;
+        margin-bottom: 20px;
+    }
+
+    legend {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+    button {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    
+    fieldset {    
+        padding-bottom: 40px;
+    }
+
+}
