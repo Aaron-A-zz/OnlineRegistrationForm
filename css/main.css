@@ -47,7 +47,7 @@ h2 {
 
 .page-title {
     text-transform: uppercase;
-    font-size: 1.2em;
+    font-size: 2.2em;
     color: white;
 }
 
@@ -96,6 +96,7 @@ input[type="email"],
 input[type="number"],
 input[type="tel"],
 input[type="password"],
+input[type="twitter"],
 textarea,
 select {
   background: #eff0f1;
@@ -116,6 +117,7 @@ input[type="email"]:focus,
 input[type="number"]:focus,
 input[type="tel"]:focus,
 input[type="password"]:focus,
+input[type="twitter"]:focus,
 textarea:focus,
 select:focus {
   background: white;
@@ -174,7 +176,7 @@ li:last-child {
 }
 
 legend {
-    font-size: 2.0em;
+    font-size: 1.5em;
     font-weight: 600;
     padding-bottom: 30px;
     padding-top: 30px;
@@ -293,6 +295,7 @@ footer {
     input[type="email"],
     input[type="number"],
     input[type="tel"],
+    input[type="twitter"],
     select {
         width: 445px;
         margin-bottom: 0;
